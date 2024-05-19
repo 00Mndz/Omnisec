@@ -1,13 +1,25 @@
 <?php
 
-$usuario = 'root';
-$senha = '';
-$database = 'cadastrooni';
-$host = 'localhost';
+session_start();
 
-$mysqli = new mysqli($host, $usuario, $senha, $database);
+$localhost = "localhost";
+$user = "root";
+$pass = "";
+$banco = "cadastrooni";
 
-if($mysqli->error) {
-    die("falha ao conectar ao bando de dados");
+global $pdo;
 
+try{
+
+    $pdo = new PDO("mysql:dbname=".$banco."; host=".$localhost, $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+}catch(PDOException $e){
+    echo "ERRO: ".$e->getMessage();
+    exit;
 }
+
+
+
+
+?>

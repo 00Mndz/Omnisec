@@ -1,76 +1,63 @@
 body{
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: Hidden;
+    background-color: #8B0000;
+    font-family:sans-serif;
 }
 
-
-.area-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+.form{
+    width: 400px;
+    margin: auto;
+    padding-top: 120px;
 }
 
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    width: 455px;
-    height: 420px;
-    padding: 35px;
+.card{
+    box-shadow:1px 1px 5px #ccc;
+    background-color: rgb(194, 191, 191);
+    padding: 30px;
+    border-radius: 5px;
 }
 
-.login form{
-    display: flex;
-    width: 60%;
-    flex-direction: column;
+.card-top{
+    text-align: center;
 }
 
-.login input{
-    margin-top: 10px;
-    background-color: #340016;
-    padding-left: 10px;
-    color: #020001;
-    font-size: 18px;
-    border: none;
-    height: 45px;
-    outline: none;
-    border-radius: 8px;
-    
-}
-.login img{
-    width: 140px;
-    height: auto;
+.card-group > label{
+    width: 100%;
+    color: black;
+    display: block;
 }
 
-input::placeholder{
-    color: #020001;
-    font-size: 18px;
+.card-group{
+    margin-bottom: 10px;
+}
+
+.card-group > input{
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
     
 }
 
-form [type="submit"]{
-    background-color: #9f102c;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
+.card-group > button{
+    background-image: linear-gradient(to right, red,black);
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    border: 0px;
+    outline: 0;
 }
 
-p{
-    color: #340016;
+.btn button:hover{
+    background-image: linear-gradient(to right, black,red);
 }
 
-a{
-    color: #9f102c;
-    text-decoration: none;
-    margin-left: 10px;
+.imglogin{
+    width: 150px;
+
+}
+
+.titulo{
+    color: #8B0000;
 }
